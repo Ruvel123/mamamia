@@ -1,0 +1,233 @@
+{
+   "Base ": {
+      "req" : {
+
+       "required":true ,
+        "max" : 1
+
+
+      } ,
+     "list": [
+
+      {
+         "name": "Normal ",
+         "price": "300"
+      },
+      {
+         "name": "Thin crust ",
+         "price": "350"
+      }
+   ]},
+
+
+
+   "Toppings ":  {
+      "req" : {
+
+       "required":true ,
+        "max" : 3
+
+
+      } ,
+     "list": [
+      {
+         "name": "Anchovies ",
+         "price": "50"
+      },
+      {
+         "name": "Bacon ",
+         "price": "100"
+      },
+      {
+         "name": "Canadian Bacon ",
+         "price": "150"
+      },
+      {
+         "name": "Chicken ",
+         "price": "100"
+      },
+      {
+         "name": "Italian Sausage ",
+         "price": "175"
+      },
+      {
+         "name": "Sausage ",
+         "price": "125"
+      },
+      {
+         "name": "Pepperoni ",
+         "price": "90"
+      }
+   ]},
+
+
+   "Veggies ":  {
+      "req" : {
+
+       "required":true ,
+        "max" : 5
+
+
+      } ,
+     "list": [
+      {
+         "name": "Green Peppers ",
+         "price": "50"
+      },
+      {
+         "name": "Mushrooms ",
+         "price": "25"
+      },
+      {
+         "name": "Onions ",
+         "price": "30"
+      },
+      {
+         "name": "Tomatoes ",
+         "price": "30"
+      },
+      {
+         "name": "Banana Peppers ",
+         "price": "70"
+      },
+      {
+         "name": "Pineapple Tidbits ",
+         "price": "65"
+      },
+      {
+         "name": "Ripe Olives ",
+         "price": "95"
+      },
+      {
+         "name": "Green Olives ",
+         "price": "90"
+      },
+      {
+         "name": "Jalapeno Peppers ",
+         "price": "75"
+      }
+   ]},
+
+
+
+
+   "Cheese ":  {
+      "req" : {
+
+       "required":true ,
+        "max" : 1
+
+
+      } ,
+     "list": [
+      {
+         "name": "Parmesan/Romano ",
+         "price": "100"
+      },
+      {
+         "name": "Three Cheese Blend ",
+         "price": "150"
+      }
+   ]},
+
+
+
+   "Sauces ":  {
+      "req" : {
+
+      "required":true ,
+        "no-limit" : true ,
+        "min":1
+
+
+      } ,
+     "list": [
+      {
+         "name": "Chicken BBQ Pizza Sauce ",
+         "price": "80"
+      },
+      {
+         "name": "Ranch Sauce ",
+         "price": "70"
+      },
+      {
+         "name": "Spinach Alfredo Sauce ",
+         "price": "75"
+      }
+   ]},
+
+
+
+
+   "Sides & Desserts ":  {
+      "req" : {
+
+      "required":false ,
+        "no-limit" : true
+
+
+      } ,
+     "list": [
+      {
+         "name": "Chicken Poppers ",
+         "price": "200"
+      },
+      {
+         "name": "Chicken Wings (Roasted)",
+         "price": "250"
+      },
+      {
+         "name": "Chocolate Chip Cookie ",
+         "price": "150"
+      },
+      {
+         "name": "Double Chocolate Chip Brownie ",
+         "price": "200"
+      }
+   ]},
+
+
+
+   "Extras ":  {
+      "req" : {
+
+       "required":false ,
+        "no-limit" : true
+
+
+      } ,
+     "list": [
+      {
+         "name": "Pepperoncini ",
+         "price": 25
+      },
+      {
+         "name": "BBQ Dipping Sauce ",
+         "price": 25
+      },
+      {
+         "name": "Blue Cheese Dipping Sauce ",
+         "price": 25
+      },
+      {
+         "name": "Buffalo Dipping Sauce ",
+         "price": 25
+      },
+      {
+         "name": "Cheese Dipping Sauce ",
+         "price": 25
+      },
+      {
+         "name": "Garlic Sauce ",
+         "price": 25
+      },
+      {
+         "name": "Garlic Parmesan Sauce ",
+         "price": 25
+      },
+      {
+         "name": "Honey Chipotle Sauce ",
+         "price": 25
+      }
+   ]}
+}
