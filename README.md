@@ -59,7 +59,7 @@ I will Give you all short tour of the project :
 
 12) Fill the form below coupon code in order to proceed with the payment and to get your ummmmyy! pizza delivered at your house :D :D :D
 
-![alt text](https://github.com/Ruvel123/mamamia/blob/master/mamamia/ss10.png)
+![alt text](https://github.com/Ruvel123/mamamia/blob/master/mamamia/s10.png)
 
 
 
