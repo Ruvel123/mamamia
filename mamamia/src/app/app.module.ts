@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import {CartInfoService} from './cart-info.service' ;
+import { FormsModule } from '@angular/forms';
 
 import { GetDataService } from './get-data.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,9 +26,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     NgbModule ,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [GetDataService],
+  providers: [GetDataService,CartInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

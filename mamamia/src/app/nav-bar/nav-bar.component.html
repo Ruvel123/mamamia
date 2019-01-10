@@ -1,1 +1,8 @@
-<div class = "naav-bar-container"><b class ="headingTitle">Mamma Mia</b></div>
+<div class = "naav-bar-container">
+    <b class ="headingTitle"><a routerLink = "/" class="title-style">Mamma Mia</a></b>
+    <div class="myCart">
+            <a routerLink = "/checkout" ><button type="button" class="btn btn-warning"><i class="material-icons">
+            shopping_cart
+            </i> <strong>{{myCart}}</strong></button></a>
+    </div>        
+</div>

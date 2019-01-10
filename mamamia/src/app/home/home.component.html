@@ -1,11 +1,9 @@
 <div>
-  <app-nav-bar></app-nav-bar>
     <div class="main-create-container">
 
-  <div>
-    <div class="pizza-list"></div>
+  <div *ngIf="showCreatePizzaView">
+    <div class="pizza-list "></div>
 
-    {{menuData["Base"]}}
     <div class="pizza-menu">
       <ngb-tabset [justify]="currentJustify">
 
@@ -21,16 +19,16 @@
                         <strong>This is optional</strong>
                       </div>
                       <div  *ngIf = "menuData[key]['req']['min']"  class="item-requirement-item">
-                        <strong>Minimum allowed {{menuData[key]['req']['min']}}</strong>
+                        <strong>Min. allowed {{menuData[key]['req']['min']}}</strong>
                       </div>
                       <div  *ngIf = "menuData[key]['req']['max']"  class="item-requirement-item">
-                        <strong>Maximum allowed {{menuData[key]['req']['max']}}</strong>
+                        <strong>Max. allowed {{menuData[key]['req']['max']}}</strong>
                       </div>
                       <div  *ngIf = "menuData[key]['req']['no-limit']"  class="item-requirement-item">
                         <strong>No limits</strong>
                       </div>
                     </div></ngb-alert>
-              <ngb-alert *ngIf="!staticAlertClosed" (close)="staticAlertClosed = false">{{errorMessage}}</ngb-alert>
+              <ngb-alert *ngIf="!staticAlertClosed"type = "danger" (close)="staticAlertClosed = false">{{errorMessage}}</ngb-alert>
 
               <div *ngFor="let data of menuData[key]['list'] ; let i = index" [attr.data-index]="i">
                 <div class="menu-items">
@@ -56,12 +54,20 @@
     </div>
 
 
-    <div class="pizza-create-current"></div>
+    <div class="pizza-create-current">
 
+      <button class ="btn btn-danger" (click)="addAnother()">save and add another</button>
+      <button class ="btn btn-danger" (click)="checkout()">Checkout</button>
+    
+    </div>
+ 
   </div>
-  <div class="create-pizza-button-container">
+  <div *ngIf="!showCreatePizzaView" class="create-pizza-button-container">
+      <img src="assets/images/pizza.png" width = "150px" class="pizza-image" alt="image">
+      <br/>
+
     <p><b>Start Creating your own pizza</b></p>
-    <button class="btn btn-danger">create pizza</button></div>
+    <button class="btn btn-danger" (click)="createPizza()">create pizza</button></div>
   </div>
 
 </div>
