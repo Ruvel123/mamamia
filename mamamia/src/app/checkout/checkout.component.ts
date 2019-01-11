@@ -143,7 +143,7 @@ export class CheckoutComponent implements OnInit {
         {
           if(data["count"])
           {
-            this.totalPrice +=   parseInt(data["price"])
+            this.totalPrice +=   (parseInt(data["price"])*parseInt(data["count"]))
           }
         }
       }
