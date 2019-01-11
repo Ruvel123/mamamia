@@ -65,7 +65,7 @@ export class CheckoutComponent implements OnInit {
       this.showAlert("Enter valid last name")
       return false
     }
-    if(this.address.length ==10)
+    if(this.address.length <10)
     {
       this.showAlert("Enter valid and complete address")
       return false ;
@@ -116,7 +116,6 @@ export class CheckoutComponent implements OnInit {
    {
     this.messageType = "success";
     this.showAlert("Payment successful")
-   }
    this.listOfPizza=[] ;
    localStorage.removeItem("myCart");
    localStorage.removeItem("currentPizza");
@@ -124,7 +123,7 @@ export class CheckoutComponent implements OnInit {
    this.totalPrice = 0 ;
    this.paymentFormOpen = false ;
    this.router.navigate(['/'], { queryParams: {  } });
-
+   }
 
 
    
